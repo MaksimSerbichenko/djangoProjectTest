@@ -7,3 +7,7 @@ class Sabscriber(models.Model):
 
     def __str__(self):
         return "User %s    %s" % (self.name, self.email)
+
+    class Meta:
+        verbose_name = 'MySabscriber'
+        verbose_name_plural = 'A lot of Sabscribers'
