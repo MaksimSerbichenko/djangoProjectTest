@@ -1,6 +1,6 @@
 from django.db import models
 
-from djangoProjectTest.products.models import Product
+from products import Product
 
 
 class Status(models.Model):

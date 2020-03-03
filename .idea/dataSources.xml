@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-<<<<<<< HEAD
-    <data-source source="LOCAL" name="Django default" uuid="f6da32db-65da-495a-b7de-4e4f82827354">
-=======
-    <data-source source="LOCAL" name="Django default" uuid="c5aca78a-8a05-47de-bfec-a0146539c7a5">
->>>>>>> origin/master
+    <data-source source="LOCAL" name="Django default" uuid="0f9271b9-c34f-4684-b48c-71095bbced75">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/djangoProjectTest/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-<<<<<<< HEAD
-      <jdbc-url>jdbc:sqlite:C:\Users\Maksym\PycharmProjects\djangoProjectTest\db.sqlite3</jdbc-url>
-=======
       <jdbc-url>jdbc:sqlite:C:\Users\maksim.serbichenko\djangoProjectTest\db.sqlite3</jdbc-url>
->>>>>>> origin/master
     </data-source>
   </component>
 </project>
