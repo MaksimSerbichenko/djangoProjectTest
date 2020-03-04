@@ -2,8 +2,12 @@ from django.contrib import admin
 from .models import *
 
 
+class ProductImageInLine (admin.TabularInline):
+    model = ProductImage
+
 class ProductAdmin (admin.ModelAdmin):
     list_display = [field.name for field in Product._meta.fields]
+    inlines = [ProductImageInLine]
 
     class Meta:
         model = Product
