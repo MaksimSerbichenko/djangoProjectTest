@@ -4,6 +4,7 @@ import datetime
 import time
 from .forms import SabscribersForm
 
+
 def landing(request):
     name = "CoderMax"
     #current_day = "22.02.2020"
@@ -19,3 +20,7 @@ def landing(request):
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
     return render(request, 'landing/landing.html', locals())
+
+
+def home(request):
+    return render(request, 'landing/home.html', locals())
