@@ -3,6 +3,7 @@ from django.shortcuts import render
 import datetime
 import time
 from .forms import SabscribersForm
+from products.models import Product
 
 
 def landing(request):
@@ -23,4 +24,5 @@ def landing(request):
 
 
 def home(request):
+    products = Product.objects.filter(is_active=True)
     return render(request, 'landing/home.html', locals())
