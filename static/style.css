@@ -9,7 +9,7 @@ html, body{
     margin: 20px;
 }
 
-.img-responsive{
+.background-responsive{
     background-image: url(img/slider0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,8 +26,7 @@ html, body{
 
 }
 
-.img-product{
-    background-image: url(img/test2.jpg);
+.img-responsive{
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -4,22 +4,24 @@
 
 {% block content %}
     <div class="section-top">
-        <div class="img-responsive" alt=""></div>
+        <div class="background-responsive" alt=""></div>
     </div>
     <div class="section">
         <div class="container">
             <div class="row">
 
-                {% for product in products %}
+                {% for product_image in products_images %}
                     <div class="col-lg-3">
                         <div class="product-item">
-                            <div class="img-product"></div>
-                            <h6>{{ product.name }}</h6>
+                            <div>
+                                <img src="{{ product_image.image.url }}" class="img-responsive" alt="Залупа">
+                            </div>
+                            <h6>{{ product_image.product.name }}</h6>
                             <p>
-                                {{ product.description|truncatechars_html:70 }}
+                                {{ product_image.product.description|truncatechars_html:50 }}
                             </p>
                             <div>
-                                {{ product.price }} UAH
+                                {{ product_image.product.price }} UAH
                             </div>
                             <div class="add-to-card-btn">
                                 <button class="btn btn-success">
